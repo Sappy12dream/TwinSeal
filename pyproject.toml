@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "twinseal"
 version = "0.1.0"
 description = "Secure document sharing between paired users"
-authors = [{name = "Your Name", email = "your.email@example.com"}]
+authors = [{name = "Sapna Singh Khatik", email = "sapnasinghkhatik@gmail.com"}]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.9"
@@ -58,3 +58,9 @@ python_version = "3.9"
 warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = true
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.setuptools.package-data]
+app = ["../alembic/**", "alembic.ini"]
